@@ -1,0 +1,137 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    background-color: #FFE6F0;
+}
+
+.logo{
+    
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff91b9;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #632d6c;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff91b9;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.contact{
+    min-height: 100vh;
+    background-color: #FFE6F0;
+    padding: 50px;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #b83260;
+}
+
+.joinus-form{
+    text-align: left;
+}
+
+.joinus-form h3{
+    font-size: 24px;
+    matgin-bottom: 20px;
+    color: #9d3e5f;
+
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    border-radius: 8px;
+    border:none;
+    background-color: #F8D8E4;
+    color:#4d2534;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #FF91B9;
+}
+
+button{
+    display: inline-block;
+    padding:12px 24px;
+    background-color: #FF91B9;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #b83260;
+}
+
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:#774181;
+}
+
+.contact-info p{
+    margin-bottom: 20px;
+    color:#555;
+}
+
+.contact-info i{
+    margin-right: 10px;
+    color:#bf799a;
+}
+@media screen and (max-width: 768px){
+    .container{
+        padding: 20px;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+.content p{
+    color: #555;
+}
